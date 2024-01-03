@@ -1,0 +1,113 @@
+
+    body,html{
+        font-family:sans-serif;
+        color:#333;
+    }
+    
+    .attribution{
+        font-size: 11px;
+        text-align: center;
+    }
+    div{
+        display: block;
+    }
+    .clearfix::after,.clearfix::before{
+        content:"";
+        display:table;
+        clear:both;
+    }
+    h1{
+        margin:.67em 0;
+        margin-right: 0em;
+        font-size:2em;
+        font-weight:bold;
+        text-align: center;
+    }
+    .h1 small{
+        font-size:.85em;
+        font-weight:normal;
+        line-height:1.21429
+    }
+    .small{
+        font-size:.75em;
+    }
+    .mark{
+        background-color:#ff0;
+        padding:.2em
+    }
+    .code{
+        font-size:.85em;
+        background-color:#fafbfc;
+        border-radius: 2px
+    }
+    .kbd{
+        font-variant:all-small-caps;
+        font-size:.85em;
+        background-color:#fff;
+        box-shadow:inset 0 -2px 0 rgba(27,31,35,0.6)
+    }
+                    
+#camera-container {
+            position: relative;
+            width: 26vw;
+            max-width: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+#qrScanner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#scanButton {
+    display: block;
+    margin: 10px auto;
+}
+
+#scanSquare {
+    position: absolute;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+}
+
+#qrImage{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcode{
+    width: 26vw;
+    height: 40vh;
+    text-align: center;
+}
+
+#scanMessage {
+            display: none;
+            position: fixed;
+            width: 26vw;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(106, 103, 103, 0.848);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+}
+
+#openLink {
+            color: #00f;
+            text-decoration: underline;
+            cursor: pointer;
+        }

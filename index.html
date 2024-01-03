@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+    <!-- includes the Google Fonts stylesheet to display text in a specific style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@40">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <h1><em> Scan the QR code </em> to visit Frontend Mentor and take
+        your coding
+        skills to the next level</h1>
+    <div id="qrImage"><img src="./images/image-qr-code.png" id="qrcode"></div>
+    <div id="camera-container">
+        <video id="qrScanner"></video>
+        <div id="scanSquare"></div>
+    </div>
+    <button id="scanButton" onclick="startScan()">Iniciar escaneo</button>
+    <!-- Scanned QR message -->
+    <div id="scanMessage">
+        <p>scanned QR:</p>
+        <p id="openLink" onclick="openScannedContent()">open content</p>
+    </div>
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+            Mentor</a>. Coded by <a href="https://github.com/twinkym" target="_blank" aria-hidden="true">David De
+            La Puente
+            Enriquez</a>. </div>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="./js/qr.js"></script>
+</body>
+
+</html>
